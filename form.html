@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body{
+            background-color:skyblue;
+            padding:0px 80px;
+        }
+        .reg{
+            text-align:center;
+            background-color: lightblue;
+            padding: 10px;
+        }
+        h3{
+            color:black;
+        font-size: 20px;
+        }
+        .input{
+            width: 30%;
+        }
+        button{
+            background-color:grey;
+            color:white;
+            border: 0px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        button a{
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 10px;
+            color: white;
+        }
+        button a:hover{
+            transition-duration: 0.6s;
+         border-radius: 10px;
+            color: black;
+            padding:10px 20px;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <button>
+        <a href="index.html">Home</a>
+    </button>
+    <div class="reg">
+        <h3>REGISTERATION FOR ONLINE CLASSES</h3>
+        <p>Fill in with correct details</p>
+    <form action="">
+        <div>
+            <Label for="firstname">First Name :</Label> <br>
+            <input class="input" type="text" id="firstname" name="First Name">
+        </div>
+        <br>
+        <div>
+            <label for="lastname">Last Name :</label> <br>
+            <input class="input" type="text" id="lastname" name="Last Name">
+        </div>
+        <br>
+        <div>
+            <label for="Age">Age</label> <br>
+            <input class="input" type="number" id="Age" name="Age">
+        </div>
+        <br>
+        <div>
+            <label for="Sex">Sex:</label>
+            <input type="radio" id="male" name="sex" value="male">Male
+            <input type="radio" id="Female" name="sex" value="Female">Female
+            <input type="radio" id="Other" name="sex" value="Other">Other
+        </div>
+        <br>
+        <div>
+            <label for="Date of Birth">Date of Birth</label><br>
+            <input class="input" type="date" id="Date of Birth" name="Date of Birth">
+        </div>
+        <br>
+        <label for="email">E-Mail Address</label><br>
+        <input class="input" type="email" id="email" name="email" placeholder="abcde@email.com">
+        <div>
+            <p>Kindly select your stack of choice.</p>
+            <label for="Stack">Choose Stack</label> <br>
+            <select name="Stack" id="Stack">
+                <option selected value="Front-End">Front-End</option>
+                <option value="Back-End">Back-End</option>
+                <option value="UI/UX">UI/UX</option>
+                <option value="Data Science/AI">Data Science/AI</option>
+                <option value="Cyber-Security">Cyber-Security</option>
+            </select>
+        </div>
+        <br>
+        <p>Do you have an experience in any of these Programming language?</p>
+        <label for="experience">Yes, I know about...</label>
+        <input type="checkbox" name="experience" id="Python" value="Python">Python
+        <input type="checkbox" name="experience" id="C/C#/C++" value="C/C#/C++">C/C#/C++
+        <input type="checkbox" name="experience" id="Java/Java script" value="Java/Java script">Java/Java script <br>
+        <br>
+    <em>If No, What additional course would you like to learn</em>
+        <label for="message"></label><br>
+        <textarea class="input" id="message" name="message" rows="4" cols="20"></textarea>
+        <br>
+            <br> <button> Submit</button>
+    </form>
+    </div>
+    
+</body>
+</html>
